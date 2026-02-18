@@ -1,12 +1,20 @@
-create a repository
-Initilize the repository
-node_modules, package.json, package-lock.json
-intstall express
-create a server
-listen to port ???
-Make request handlers for /test, /hello
-install nodemon and update script inside package.json
-diff between carat and tilda
-what are depedencies
-what is the use of "-g" while npm install
-created dummy API's
+-create a repository
+-Initilize the repository
+-node_modules, package.json, package-lock.json
+-intstall express
+-create a server
+-listen to port ???
+-Make request handlers for /test, /hello
+-install nodemon and update script inside package.json
+-diff between carat and tilda
+-what are depedencies
+-what is the use of "-g" while npm install
+-created dummy API's
+
+-initilize git
+-gitignore
+-create a remote repo on github.com
+-push all code to local to remote origin
+-play with the routes and route extension ex. /hello,  /  , /hello/2, /xyx
+-order of routes matter a lot
+-install postamn app and make a workspace/collectiom >test  API call

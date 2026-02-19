@@ -18,3 +18,8 @@
 -play with the routes and route extension ex. /hello,  /  , /hello/2, /xyx
 -order of routes matter a lot
 -install postamn app and make a workspace/collectiom >test  API call
+-write logic to handle GET, POST, Patch, Delete API calls and test them on postman
+--explore routing and use of ?, +, (), * in the routes
+-- use of regex in routes  /a/ , /.*fly$/
+---reading the query params in the routes
+---reading the dynamic routes

@@ -31,4 +31,5 @@
 --how express js handles requests behind the scenes
 app.use and app.all diff
 --write a dummy auth m iddleware for admin
-write a dummy auth m iddleware for all user routes except /user/login
+--write a dummy auth m iddleware for all user routes except /user/login
+---error handling using app.use("/", (err,req,res,next)={});

@@ -23,3 +23,12 @@
 -- use of regex in routes  /a/ , /.*fly$/
 ---reading the query params in the routes
 ---reading the dynamic routes
+
+--Multiple route handlers--paly with code
+--next()
+--next function and errors along wuth res.send
+-- Middleware define
+--how express js handles requests behind the scenes
+app.use and app.all diff
+--write a dummy auth m iddleware for admin
+write a dummy auth m iddleware for all user routes except /user/login

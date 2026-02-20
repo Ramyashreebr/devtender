@@ -33,3 +33,12 @@ app.use and app.all diff
 --write a dummy auth m iddleware for admin
 --write a dummy auth m iddleware for all user routes except /user/login
 ---error handling using app.use("/", (err,req,res,next)={});
+
+--create a free cluster on mongodb official website (Mongo Atlas)
+--install Mongoose library
+--connect your application to database <connection-url>/devTinder
+--call the connectionDB function and connect to database before starting application on 4444
+---create a userSchema and user Model
+---create Post/signup API to add data to database
+---push some documents using API calls form postman
+-- error handling in try catch block

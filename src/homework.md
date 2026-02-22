@@ -42,3 +42,7 @@ app.use and app.all diff
 ---create Post/signup API to add data to database
 ---push some documents using API calls form postman
 -- error handling in try catch block
+
+--js object vs json(diff)---
+---Add the express.json middleware to your app
+---make your signup API dynamic to recieve data from the end user(postman, browser, outside server hitting API)

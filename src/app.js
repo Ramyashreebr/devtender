@@ -27,8 +27,112 @@ app.post("/signup", async (req,res) =>
 
 });
 
+// //get user by email
+// app.get("/user", async(req,res)=>
+// {
+//     const userEmail=req.body.email;
+//     //req.body.email=it is reading email
+//     //find ==it finds  and send back
+//    //whenevr we use async we need to write await also
+//     //whenever performing db operation use  async await
+//     try{
+//       console.log(userEmail);
+//    const user= await User.find({ });
+//  res.send(user);
+//     }
+//     catch(err)
+//     {
+//       res.status(400).send("something went wrong");
+//     }
 
 
+// });
+
+
+
+//Feed API -GET/fedd - get all the users from the database
+app.get("/feed",async (req,res)=>
+{         
+   const userEmail=req.body.email;
+
+      try{
+         //const users = await User.find({});
+                  const users = await User.findOne({email: userEmail});
+
+         res.send(users);
+      }
+      catch(err)
+      {
+         res.status(400).send("something went wrong");
+      }
+});
+// to delete one user we need user id first
+app.delete("/user", async (req,res)=>
+{
+    const userId=  req.body.userId;
+    try{
+       const user= await User.findByIdAndDelete({_id:userId});//shorthand
+     // const user= await User.findByIdAndDelete(userId);//shorthand
+      res.send("user deleted successfully");
+    }
+      catch(err)
+      {
+         res.status(400).send("something went wrong");
+      }
+});
+
+//update data of the user
+app.patch("/user", async (req,res)=>
+{
+      const userId=req.body.userId;
+
+   const data=req.body;//it finds id and if we give firstname that is data
+   console.log(data);
+   try
+   {
+           await User.findByIdAndUpdate({_id:userId}, data);
+           res.send("user updated successfully")
+   }
+    catch(err)
+      {
+         res.status(400).send("something went wrong");
+      }
+})
+//using email we are upadting one field
+app.patch("/userEmail", async (req,res)=>
+{
+      const userEmail=req.body.email;
+
+   const data=req.body;//it finds id and if we give firstname that is data
+   console.log(data);
+   try
+   {
+          const updatedUser= await User.findOneAndUpdate({email:userEmail}, data);
+           console.log(updatedUser);
+                      res.send("email updated successfully")
+   }
+    catch(err)
+      {
+         res.status(400).send("something went wrong");
+      }
+})
+
+
+app.post("/userr", async (req,res)=>
+{
+          const user = new User(req.body);
+          console.log(user);
+
+   try
+   {
+           await user.save();
+           res.send("user added successfully")
+   }
+    catch(err)
+      {
+         res.status(400).send("something went wrong");
+      }
+})
 
 
 

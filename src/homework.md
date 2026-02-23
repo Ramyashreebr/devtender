@@ -46,3 +46,19 @@ app.use and app.all diff
 --js object vs json(diff)---
 ---Add the express.json middleware to your app
 ---make your signup API dynamic to recieve data from the end user(postman, browser, outside server hitting API)
+---User.findOne with dulpicate emails ids ,which object returned
+--API - get user by email
+---API- Fedd API - get all users
+--create a delete user API
+--diif b/w PATCH and PUT
+--create an API to update
+--explore th documemtation of mongoose for models specially
+---options in a model.findOneAndUpdate method --explore more about it
+--API -update the user with email id
+--explore schematype options from the documentation
+--add required, unique, lowercase,min, minlength, trim
+--add default
+--Create a custom validate function for gender
+--improve the db schema- PUT all appropriate validations on each field in schema
+--Add timestamps to userSchema
+

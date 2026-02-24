@@ -61,4 +61,6 @@ app.use and app.all diff
 --Create a custom validate function for gender
 --improve the db schema- PUT all appropriate validations on each field in schema
 --Add timestamps to userSchema
+--Add API level validation on patch request and signup post api
+--Data sanitizing - Add API validation for each field
 

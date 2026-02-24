@@ -63,4 +63,6 @@ app.use and app.all diff
 --Add timestamps to userSchema
 --Add API level validation on patch request and signup post api
 --Data sanitizing - Add API validation for each field
-
+--install validator
+---explore validator library function and use validator fumction for password, email,url
+Never trust req.body

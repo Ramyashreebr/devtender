@@ -66,3 +66,9 @@ app.use and app.all diff
 --install validator
 ---explore validator library function and use validator fumction for password, email,url
 Never trust req.body
+
+--validate data in signUp API
+-- install bycrypt package
+--create a passwordHash using bcrypthash and save the user in encrypted password
+--create login API
+-- Compare passwords and throw error if email or password is invalid

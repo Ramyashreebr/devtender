@@ -72,3 +72,18 @@ Never trust req.body
 --create a passwordHash using bcrypthash and save the user in encrypted password
 --create login API
 -- Compare passwords and throw error if email or password is invalid
+--install cookie-parse
+--just send a dummy cookie to user
+---create GET/profile API and check if you get the cookie back
+--install jsonwebtoken
+--in login API after email and password validation, craete a jwt token send it back to user in cookies
+--read the cookies inside your profile API and find the logged in user
+--userAuth middleware 
+--Add the userAuth middleware in profile API and a new sendConnectionRequest API
+--set the expire of the jwt token and cookies to 7 days
+--create user Schema method to getJWT()
+--create UserSchema method to comparepassword(passwordInputByuser)
+--explore read documentation for express.Router
+create routes folder for manging auth, profile,request routers
+--create authrouter,profilerouter, requestrouter
+inport these routers in app.js

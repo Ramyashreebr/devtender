@@ -83,7 +83,28 @@ Never trust req.body
 --set the expire of the jwt token and cookies to 7 days
 --create user Schema method to getJWT()
 --create UserSchema method to comparepassword(passwordInputByuser)
+
+--explore tinder API's
+--create a list of all api you think of in DEV tinder
 --explore read documentation for express.Router
-create routes folder for manging auth, profile,request routers
+create routes folder for managing auth, profile,request routers
 --create authrouter,profilerouter, requestrouter
-inport these routers in app.js
+--import these routers in app.js
+--create POST?logout API's
+create PATCH/profile/edit
+--create PATCH/profile/password API => forgot password api
+--make you validate all adta in every post,patch apis
+
+--create connection Request schema
+--send connection request API
+--proper validation of data
+-- think about all corner cases
+--$or query $and query in mongoose
+--schema .pre("save")function
+--read more about indexes in MongoDb
+--why do we need index in Db
+--what is the advantages and disadvantaged of creating
+-- read this article about compund indexes in mondodb.com
+
+--write code with proper validations for POST/request/review/:status/:requestId
+--Thought process - POST vs GET
